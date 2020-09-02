@@ -5,6 +5,9 @@
       <img :src="heroImage" alt="Hero" class="image hero-image" />
       <HeroBody />
     </section>
+
+    <!-- Next sections after the main hero banner -->
+    <WhatWeDo id="WhatWeDo" />
     <Footer />
   </div>
 </template>
@@ -12,6 +15,7 @@
 <script>
 import HeroHead from "@/components/HeroHead";
 import HeroBody from "@/components/HeroBody";
+import WhatWeDo from "@/components/WhatWeDo";
 import Footer from "@/components/Footer";
 
 export default {
@@ -19,6 +23,7 @@ export default {
   components: {
     HeroHead,
     HeroBody,
+    WhatWeDo,
     Footer,
   },
   data() {
