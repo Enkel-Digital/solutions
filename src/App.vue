@@ -1,15 +1,21 @@
 <template>
   <div id="app">
     <section id="home" class="hero is-fullheight">
+      <HeroHead />
       <img :src="heroImage" alt="Hero" class="image hero-image" />
+      <HeroBody />
     </section>
   </div>
 </template>
 
 <script>
+import HeroHead from "@/components/HeroHead";
+import HeroBody from "@/components/HeroBody";
 export default {
   name: "App",
   components: {
+    HeroHead,
+    HeroBody,
   },
   data() {
     return {
