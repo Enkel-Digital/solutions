@@ -5,17 +5,21 @@
       <img :src="heroImage" alt="Hero" class="image hero-image" />
       <HeroBody />
     </section>
+    <Footer />
   </div>
 </template>
 
 <script>
 import HeroHead from "@/components/HeroHead";
 import HeroBody from "@/components/HeroBody";
+import Footer from "@/components/Footer";
+
 export default {
   name: "App",
   components: {
     HeroHead,
     HeroBody,
+    Footer,
   },
   data() {
     return {
