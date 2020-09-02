@@ -8,6 +8,7 @@
 
     <!-- Next sections after the main hero banner -->
     <WhatWeDo id="WhatWeDo" />
+    <Team id="Team" />
     <Footer />
   </div>
 </template>
@@ -16,6 +17,7 @@
 import HeroHead from "@/components/HeroHead";
 import HeroBody from "@/components/HeroBody";
 import WhatWeDo from "@/components/WhatWeDo";
+import Team from "@/components/Team";
 import Footer from "@/components/Footer";
 
 export default {
@@ -24,6 +26,7 @@ export default {
     HeroHead,
     HeroBody,
     WhatWeDo,
+    Team,
     Footer,
   },
   data() {
