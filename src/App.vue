@@ -7,6 +7,7 @@
     </section>
 
     <!-- Next sections after the main hero banner -->
+    <WhoAreWe id="WhoAreWe" />
     <WhatWeDo id="WhatWeDo" />
     <Team id="Team" />
     <Footer />
@@ -16,6 +17,7 @@
 <script>
 import HeroHead from "@/components/HeroHead";
 import HeroBody from "@/components/HeroBody";
+import WhoAreWe from "@/components/WhoAreWe";
 import WhatWeDo from "@/components/WhatWeDo";
 import Team from "@/components/Team";
 import Footer from "@/components/Footer";
@@ -25,6 +27,7 @@ export default {
   components: {
     HeroHead,
     HeroBody,
+    WhoAreWe,
     WhatWeDo,
     Team,
     Footer,
