@@ -36,7 +36,7 @@
             </div>
           </div>
 
-          <!-- <ContactForm /> -->
+          <ContactForm />
         </div>
       </div>
     </div>
@@ -44,10 +44,10 @@
 </template>
 
 <script>
-// import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/ContactForm";
 
 export default {
   name: "ContactUs",
-  // components: { ContactForm },
+  components: { ContactForm },
 };
 </script>
