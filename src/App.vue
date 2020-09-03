@@ -10,6 +10,8 @@
     <WhoAreWe id="WhoAreWe" />
     <WhatWeDo id="WhatWeDo" />
     <Team id="Team" />
+    <ContactUs id="ContactUs" />
+
     <Footer />
   </div>
 </template>
@@ -20,6 +22,7 @@ import HeroBody from "@/components/HeroBody";
 import WhoAreWe from "@/components/WhoAreWe";
 import WhatWeDo from "@/components/WhatWeDo";
 import Team from "@/components/Team";
+import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 
 export default {
@@ -30,6 +33,7 @@ export default {
     WhoAreWe,
     WhatWeDo,
     Team,
+    ContactUs,
     Footer,
   },
   data() {
