@@ -1,5 +1,8 @@
 <template>
   <section class="section container">
+    <!-- Extra break spacing so that when navigating with # ids, the navbar's border does not touch the content so closely -->
+    <br />
+
     <h1 class="title">The Team</h1>
     <div class="columns is-multiline">
       <div v-for="(teamMember, i) in teamMembers" :key="i" class="column is-3">
