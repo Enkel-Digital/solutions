@@ -13,7 +13,6 @@ module.exports = {
   rules: {
     "no-unused-vars": errorOnProduction,
     "no-unused-components": errorOnProduction,
-    "no-console": errorOnProduction,
     "no-debugger": errorOnProduction,
     "comma-dangle": ["error", "only-multiline"],
   },
