@@ -2,7 +2,7 @@
   <div id="app">
     <section id="home" class="hero is-fullheight">
       <HeroHead />
-      <img :src="heroImage" alt="Hero" class="image hero-image" />
+      <img src="./assets/hero.jpg" alt="Hero" class="image hero-image" />
       <HeroBody />
     </section>
 
@@ -35,12 +35,6 @@ export default {
     Team,
     ContactUs,
     Footer,
-  },
-  data() {
-    return {
-      heroImage:
-        "https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    };
   },
 };
 </script>
