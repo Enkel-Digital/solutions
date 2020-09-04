@@ -7,7 +7,7 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="#">
-            <img src="../assets/logo_transparent.png" alt="Logo" />
+            <img src="../assets/logo_wo_slogan.png" alt="Logo" />
           </a>
 
           <!-- Using <a> instead of button as it does not need an icon and dont have the inverted colors on click behaviour -->
