@@ -2,8 +2,8 @@
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-left">
-      <p class="title">Title</p>
-      <p class="subtitle">Subtitle</p>
+      <p class="title">Enkel Digital</p>
+      <p class="subtitle">Keep It Simple.</p>
       <a class="button" href="#next">scroll down</a>
     </div>
   </div>
@@ -14,9 +14,3 @@ export default {
   name: "HeroBody",
 };
 </script>
-
-<style scoped>
-.is-extra-dark {
-  color: pink;
-}
-</style>
