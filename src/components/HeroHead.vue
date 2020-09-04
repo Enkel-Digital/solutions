@@ -2,11 +2,11 @@
   <!-- Hero head: will stick at the top on load -->
   <div class="hero-head">
     <!-- is fixed top will keep it sticky at the top of the page -->
-    <nav class="navbar is-fixed-top" role="navigation">
+    <nav id="nav" class="navbar is-fixed-top is-white" role="navigation">
       <!-- Container to force nav bar into center with wider side margins -->
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">
+          <a class="navbar-item" href="#">
             <img src="../assets/logo_transparent.png" alt="Logo" />
           </a>
 
@@ -42,8 +42,7 @@
               v-html="menuItem.name"
               :href="menuItem.link"
               :target="menuItem.target"
-            >
-            </a>
+            />
           </div>
         </div>
       </div>
@@ -59,14 +58,19 @@ export default {
       showMobileMenu: false,
 
       menuItems: [
-        { name: "Home", link: "#home" },
+        { name: "Home", link: "#" },
         { name: "About Us", link: "#WhoAreWe" },
         { name: "Services", link: "#WhatWeDo" },
-        { name: "Past Projects", link: "" },
+        { name: "Customer Success", link: "#" },
         { name: "Team", link: "#Team" },
-        { name: "Contact", link: "" },
+        { name: "Contact", link: "#ContactUs" },
         {
-          name: "<i class='fab fa-github' /> Github",
+          name: "<i class='fab fa-medium' />",
+          link: "https://medium.com/enkel-digital",
+          target: "_blank",
+        },
+        {
+          name: "<i class='fab fa-github' />",
           link: "https://github.com/Enkel-Digital/",
           target: "_blank",
         },
@@ -75,3 +79,12 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Gives the nav bar a white fill background and a super thin and light bottom underline to give visual seperation from the content */
+#nav {
+  /* background: black; */
+  background: white;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+</style>
