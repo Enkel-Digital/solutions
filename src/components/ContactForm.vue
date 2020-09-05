@@ -1,85 +1,6 @@
 <template>
   <!-- @todo Embed the teletif iframe here instead -->
-  <div class="tile is-8 is-vertical is-parent">
-    <div class="tile is-child box has-text-left">
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control has-icons-left">
-          <input
-            class="input"
-            v-model="name"
-            type="text"
-            placeholder="How do we address you?"
-          />
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control has-icons-left">
-          <input
-            class="input"
-            v-model="email"
-            type="email"
-            placeholder="Email"
-          />
-          <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-          </span>
-        </div>
-        <!-- @todo Add email input validation -->
-        <!-- <p class="help is-danger">Invalid email</p> -->
-      </div>
-
-      <div class="field">
-        <label class="label">Subject</label>
-        <div class="control has-icons-left has-icons-right">
-          <input
-            class="input"
-            v-model="subject"
-            type="text"
-            placeholder="What is this about?"
-          />
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Message</label>
-        <div class="control">
-          <textarea
-            class="textarea"
-            placeholder="Do add on if you have any additional details"
-            v-model="message"
-          />
-        </div>
-      </div>
-
-      <!-- Div for the recaptcha input, will be populated automatically be the recaptcha external script below -->
-      <!-- Note that "gCaptchaError" has to be a function in the global namespace attached to the window object -->
-      <div
-        style="margin-top: 1em; margin-bottom: 1em"
-        class="g-recaptcha"
-        data-sitekey="6LdCM9sUAAAAABDfnyDJqwlECqaRbuCDldwkcvvP"
-        data-error-callback="gCaptchaError"
-      />
-
-      <div class="field control">
-        <button
-          class="button"
-          style="background: lightcoral; color: white"
-          @click="submitForm"
-        >
-          Contact Me!
-        </button>
-      </div>
-    </div>
-
+  <div class="column card is-5 is-vertical">
     <!-- Load google's recaptcha script -->
     <script
       type="application/javascript"
@@ -87,6 +8,111 @@
       async
       defer
     />
+
+    <p class="title">Contact Form</p>
+    <p class="subtitle is-6">We will be in contact as soon as possible.</p>
+
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control has-icons-left">
+        <input
+          class="input"
+          v-model="name"
+          type="text"
+          placeholder="How do we address you?"
+        />
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Company Name</label>
+      <div class="control has-icons-left">
+        <input
+          class="input"
+          v-model="companyName"
+          type="text"
+          placeholder="Optional"
+        />
+        <span class="icon is-small is-left">
+          <i class="fas fa-building"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control has-icons-left">
+        <input class="input" v-model="email" type="email" placeholder="Email" />
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+      </div>
+      <!-- @todo Add email input validation -->
+      <!-- <p class="help is-danger">Invalid email</p> -->
+    </div>
+
+    <div class="field">
+      <label class="label">Phone number (optional)</label>
+      <div class="control has-icons-left">
+        <input
+          class="input"
+          v-model="phoneNumber"
+          type="tel"
+          placeholder="Please include country/area code"
+        />
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Subject</label>
+      <div class="control has-icons-left has-icons-right">
+        <input
+          class="input"
+          v-model="subject"
+          type="text"
+          placeholder="How can we help you?"
+        />
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea
+          class="textarea"
+          placeholder="Any additional details"
+          v-model="message"
+        />
+      </div>
+    </div>
+
+    <!-- Div for the recaptcha input, will be populated automatically be the recaptcha external script below -->
+    <!-- Note that "gCaptchaError" has to be a function in the global namespace attached to the window object -->
+    <div
+      style="margin-top: 1em; margin-bottom: 1em"
+      class="g-recaptcha"
+      data-sitekey="6LdCM9sUAAAAABDfnyDJqwlECqaRbuCDldwkcvvP"
+      data-error-callback="gCaptchaError"
+    />
+
+    <div class="field control">
+      <button
+        class="button"
+        style="background: lightcoral; color: white"
+        @click="submitForm"
+      >
+        Contact Me!
+      </button>
+    </div>
   </div>
 </template>
 
@@ -102,6 +128,7 @@ export default {
     return {
       name: "",
       email: "",
+      phoneNumber: "",
       subject: "",
       message: "",
     };
@@ -115,6 +142,7 @@ export default {
       const form = {
         name: this.name,
         email: this.email,
+        phoneNumber: this.phoneNumber,
         subject: this.subject,
         message: this.message,
         // Get the website that the user is on
