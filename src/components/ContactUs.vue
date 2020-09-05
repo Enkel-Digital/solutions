@@ -1,5 +1,5 @@
 <template>
-  <section class="section has-text-left">
+  <section class="section container has-text-left">
     <!-- Extra break spacing so that when navigating with # ids, the navbar's border does not touch the content so closely -->
     <br />
 
@@ -9,9 +9,9 @@
       Let us help you reach your greatest potential.
     </p>
 
-    <div class="columns is-variable is-8 is-centered">
-      <div class="column card is-2 is-vertical" style="margin-right: 3em">
-        <p class="title mb-6">Contact us directly</p>
+    <div class="columns is-centered">
+      <div class="column card is-4 px-5" style="margin-right: 2em">
+        <p class="title mt-2 mb-6">Contact us directly</p>
 
         <p class="subtitle">
           Let us help you accelerate your growth and achieve success!
@@ -32,8 +32,8 @@
           <li>
             <i class="fab fa-telegram icon" />
             <a href="https://t.me/Jaimeloeuf" target="_blank">
-              Telegram support</a
-            >
+              Telegram support
+            </a>
           </li>
           <li><i class="fas fa-address-card icon" /> +65 94263687</li>
         </ul>

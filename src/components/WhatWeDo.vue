@@ -1,15 +1,21 @@
 <template>
-  <section class="section">
+  <section class="section has-text-left">
     <!-- Extra break spacing so that when navigating with # ids, the navbar's border does not touch the content so closely -->
     <br />
 
+    <!-- Section heading -->
+    <!-- Wrapped in columns and column to align with the left tiles -->
+    <div class="columns is-centered">
+      <h1 class="column is-two-thirds title" style="color: #e81050">
+        What we do
+      </h1>
+    </div>
+
     <div class="columns is-centered">
       <div class="column is-two-thirds">
-        <h1 class="title">What we do</h1>
-
         <div class="tile is-ancestor">
           <div class="tile is-6 is-vertical is-parent">
-            <div class="tile is-child box has-text-left">
+            <div class="tile is-child box">
               <p class="title"><i class="fas fa-layer-group" /> UI/UX Design</p>
               <p>
                 We design beautiful, functional and purposeful apps, webapps and
@@ -18,7 +24,7 @@
                 out by the simplicity.
               </p>
             </div>
-            <div class="tile is-child box has-text-left">
+            <div class="tile is-child box">
               <p class="title">
                 <i class="fas fa-cloud" /> Cloud / Devops / Hosting
               </p>
@@ -30,22 +36,38 @@
                 Confidentiality or regulatory mandates are covered.
               </p>
             </div>
-            <div class="tile is-child box has-text-left">
-              <p class="title"><i class="fas fa-ad" /> Ad Campaigns</p>
+            <div class="tile is-child box">
+              <p class="title">
+                <i class="fas fa-lightbulb" /> Business Ideation / Startup
+                advisor
+              </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                ornare magna eros, eu pellentesque tortor vestibulum ut.
-                Maecenas non massa sem. Etiam finibus odio quis feugiat
-                facilisis.
+                Run ads, build landing pages. Build marketing funnels. Setting
+                up google analytics, setting up custom analytics platforms.
+                Marketing efforts / SEO
               </p>
             </div>
-            <div class="tile is-child box has-text-left">
+            <div class="tile is-child box">
+              <p class="title"><i class="fas fa-ad" /> Ad Campaigns</p>
+              <p class="title"><i class="fas fa-bullhorn" /> Ad Campaigns</p>
+              <p class="title"><i class="fas fa-poll" /> Ad Campaigns</p>
+              <p>
+                Run ads, build landing pages. Build marketing funnels. Setting
+                up google analytics, setting up custom analytics platforms.
+                Marketing efforts / SEO
+              </p>
+            </div>
+            <div class="tile is-child box">
+              <p class="title"><i class="fas fa-search" /> SEO</p>
+              <p>Marketing efforts / SEO</p>
+            </div>
+            <div class="tile is-child box">
               <p class="title" style="margin-bottom: 1em">
                 <i class="fas fa-user-shield" /> Security
               </p>
               <div class="subtitle content">
                 <ul>
-                  <li><i class="fas fa-user-secret" /> Security Consulting</li>
+                  <li><i class="fas fa-user-secret" /> Security Consultancy</li>
                   <li>
                     <i class="fas fa-shield-alt" /> Security Implmentation
                   </li>
@@ -64,7 +86,7 @@
                 not be super experienced with potential loopholes
               </p>
             </div>
-            <div class="tile is-child box has-text-left">
+            <div class="tile is-child box">
               <p class="title">
                 <i class="fas fa-cube" /> Blockchain Consulting/Review
               </p>
@@ -79,7 +101,7 @@
                 your businesses can imporve
               </p>
             </div>
-            <div class="tile is-child box has-text-left">
+            <div class="tile is-child box">
               <p class="title"><i class="fas fa-user-graduate" /> Training</p>
               <p>
                 Perfect for SMEs when most of your team is made up of juniors,
@@ -89,9 +111,10 @@
           </div>
 
           <div class="tile is-6 is-vertical is-parent">
-            <div class="tile is-child box has-text-left">
+            <div class="tile is-child box">
               <p class="title"><i class="fas fa-terminal" /> Development</p>
-              <!-- <p class="title"><i class="fas fa-code" /> Development</p> -->
+              <!-- @todo Change to "develop", then add things like, software development / app development / mobile / cloud -- then auto change every 2 seconds -->
+              <!-- <p class="title"><i class="fas fa-code" /> Web Development</p> -->
               <p>
                 We engineer and build software, web and mobile applications,
                 APIs and more. Our team is experienced with modern technologies
@@ -100,7 +123,7 @@
                 delivery to build products on time and on budget.
               </p>
             </div>
-            <div class="tile is-child box has-text-left">
+            <div class="tile is-child box">
               <p class="title">
                 <i class="fas fa-user-friends" /> Dedicated Developers<br />
               </p>
@@ -119,11 +142,22 @@
                 <li><i class="fab fa-invision" /></li>
               </ul>
             </div>
-            <div class="tile is-child box has-text-left">
+            <div class="tile is-child box">
               <p class="title">
                 <i class="fas fa-chart-line" /> Data Analytics<br />
                 <i class="fas fa-chart-bar" /> Data Analytics<br />
                 <i class="fas fa-chart-area" /> Data Analytics<br />
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                ornare magna eros, eu pellentesque tortor vestibulum ut.
+                Maecenas non massa sem. Etiam finibus odio quis feugiat
+                facilisis.
+              </p>
+            </div>
+            <div class="tile is-child box">
+              <p class="title">
+                <i class="fas fa-globe-africa" /> Business Analysts<br />
               </p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

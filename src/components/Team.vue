@@ -1,9 +1,21 @@
 <template>
-  <section class="section container">
+  <section class="section container has-text-left">
     <!-- Extra break spacing so that when navigating with # ids, the navbar's border does not touch the content so closely -->
     <br />
 
-    <h1 class="title">The Team</h1>
+    <!-- Section heading -->
+    <div class="column is-left is-one-quarter">
+      <h1 class="title mb-6" style="color: #e81050">
+        Our Dedicated
+        <br />
+        Professionals
+      </h1>
+      <p class="subtitle mb-6" style="font-size: 1em; color: grey">
+        Meet our highly skilled team helping you to reach your greatest
+        potential.
+      </p>
+    </div>
+
     <div class="columns is-multiline">
       <div v-for="(teamMember, i) in teamMembers" :key="i" class="column is-3">
         <div class="card">
@@ -25,7 +37,7 @@
               </div> -->
             </figure>
           </div>
-          <div class="card-content has-text-left">
+          <div class="card-content">
             <p class="title">{{ teamMember.name }}</p>
             <p class="subtitle">{{ teamMember.title }}</p>
           </div>
@@ -34,7 +46,7 @@
 
       <div class="column is-3">
         <div class="card">
-          <div class="card-content has-text-left">
+          <div class="card-content">
             <p class="title" style="color: lightcoral">
               Love to work with us?<br />Want to take this spot?
             </p>
@@ -59,6 +71,12 @@ export default {
     return {
       teamMembers: [
         {
+          name: "Jeremy Tay",
+          title: "Operations Director",
+          imageSrc:
+            "https://develop.enkeldigital.com/images/Profile%20pictures/Jeremy.jpg",
+        },
+        {
           name: "JJ",
           title: "Technical Director",
           imageSrc:
@@ -76,19 +94,15 @@ export default {
         },
         {
           name: "Bin You",
-          title: "Finance & HR Specialist",
+          title: "Finance Director",
           imageSrc:
             "https://develop.enkeldigital.com/images/Profile%20pictures/Bin You.jpg",
         },
         {
-          name: "Jeremy Tay",
-          title: "Operations Director",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Jeremy.jpg",
-        },
-        {
           name: "Deon Yong",
-          title: "Corporate Relationship Director",
+          // title: "Corporate Relationship Director",
+          // title: "Public Relations Director",
+          title: "Communications Director",
           imageSrc:
             "https://develop.enkeldigital.com/images/Profile%20pictures/Deon.jpg",
         },
@@ -157,6 +171,12 @@ export default {
           title: "Software Engineer",
           imageSrc:
             "https://develop.enkeldigital.com/images/Profile%20pictures/jin.jpg",
+        },
+        {
+          name: "Olivia",
+          title: "Software Engineer",
+          imageSrc:
+            "https://develop.enkeldigital.com/images/Profile%20pictures/olivia.jpg",
         },
       ],
     };

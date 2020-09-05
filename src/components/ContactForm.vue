@@ -1,6 +1,6 @@
 <template>
   <!-- @todo Embed the teletif iframe here instead -->
-  <div class="column card is-5 is-vertical">
+  <div class="column card is-8 px-5">
     <!-- Load google's recaptcha script -->
     <script
       type="application/javascript"
@@ -9,7 +9,7 @@
       defer
     />
 
-    <p class="title">Contact Form</p>
+    <p class="title mt-2">Contact Form</p>
     <p class="subtitle is-6">We will be in contact as soon as possible.</p>
 
     <div class="field">
