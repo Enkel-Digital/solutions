@@ -21,7 +21,14 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-square">
-              <img :src="teamMember.imageSrc" :alt="teamMember.name" />
+              <!-- Use native lazy loading, on none supported devices, fallback to eager loading. -->
+              <img
+                loading="lazy"
+                :src="
+                  require(`../assets/profile_pics/${teamMember.imageSrc}.jpg`)
+                "
+                :alt="teamMember.name"
+              />
 
               <!-- Social media links, only shown on hover for desktop and shown on click for mobile -->
               <!-- <div class="overlay" width="2em">
@@ -73,14 +80,12 @@ export default {
         {
           name: "Jeremy Tay",
           title: "Operations Director",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Jeremy.jpg",
+          imageSrc: "Jeremy",
         },
         {
           name: "JJ",
           title: "Technical Director",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/JJ.JPG",
+          imageSrc: "JJ",
           social: [
             {
               icon: "<i class='fab fa-github' />",
@@ -95,88 +100,89 @@ export default {
         {
           name: "Bin You",
           title: "Finance Director",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Bin You.jpg",
+          imageSrc: "Bin You",
         },
         {
           name: "Deon Yong",
           // title: "Corporate Relationship Director",
           // title: "Public Relations Director",
           title: "Communications Director",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Deon.jpg",
+          imageSrc: "Deon",
+        },
+        {
+          name: "Yumi",
+          title: "Art Director",
+          imageSrc: "y1",
+        },
+        {
+          name: "Yue Min",
+          title: "Creative Director",
+          imageSrc: "y4",
         },
         {
           name: "Jania",
           title: "Marketing Director",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/jania.jpg",
+          imageSrc: "jania",
+        },
+        {
+          name: "Cheran",
+          title: "Staff Engineer",
+          imageSrc: "cheran",
         },
         {
           name: "Happy Haris",
           title: "Mobile Division Tech Lead",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Haris.JPG",
+          imageSrc: "Haris",
         },
         {
           name: "Jessica",
           title: "Senior Software Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Jessica.jpg",
+          imageSrc: "Jessica",
         },
         {
           name: "Zi Kang",
           title: "Senior Backend Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/zk.jpg",
+          imageSrc: "zk",
         },
         {
           name: "Yuliati",
           title: "Data Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Yuli.jpg",
+          imageSrc: "Yuli",
         },
         {
           name: "Dominic",
           title: "Business Development Executive",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Dom.jpg",
+          imageSrc: "Dom",
         },
         {
           name: "Kong Wei",
           title: "Software Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/KongWei.jpg",
+          imageSrc: "KongWei",
         },
         {
           name: "Catherine",
           title: "Frontend Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Catherine.jpg",
+          imageSrc: "Catherine",
         },
         {
           name: "Joshua",
           title: "Software Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Joshua.jpg",
+          imageSrc: "Joshua",
         },
         {
           name: "Nicholas",
           title: "Software Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/Nicholas.jpg",
+          imageSrc: "Nicholas",
         },
         {
           name: "Jin",
           title: "Software Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/jin.jpg",
+          imageSrc: "jin",
         },
         {
           name: "Olivia",
           title: "Software Engineer",
-          imageSrc:
-            "https://develop.enkeldigital.com/images/Profile%20pictures/olivia.jpg",
+          imageSrc: "olivia",
         },
       ],
     };
