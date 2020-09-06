@@ -10,7 +10,9 @@
     </p>
 
     <div class="columns is-centered">
-      <div class="column card is-4 px-5" style="margin-right: 2em">
+      <ContactForm />
+
+      <div class="column card is-4 px-5 mx-4 mb-4">
         <p class="title mt-2 mb-6">Contact us directly</p>
 
         <p class="subtitle">
@@ -38,8 +40,6 @@
           <li><i class="fas fa-address-card icon" /> +65 94263687</li>
         </ul>
       </div>
-
-      <ContactForm />
     </div>
   </section>
 </template>

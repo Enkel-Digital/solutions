@@ -1,6 +1,7 @@
 <template>
   <!-- @todo Embed the teletif iframe here instead -->
-  <div class="column card is-8 px-5">
+  <!-- Margin bottom to ensure a space between this and the other card when in mobile view -->
+  <div class="column card is-8 px-5 mx-4 mb-4">
     <!-- Load google's recaptcha script -->
     <script
       type="application/javascript"
