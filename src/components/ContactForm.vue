@@ -127,6 +127,7 @@ export default {
   data() {
     return {
       name: "",
+      companyName: "",
       email: "",
       phoneNumber: "",
       subject: "",
@@ -141,6 +142,7 @@ export default {
       // Create form object with all the data
       const form = {
         name: this.name,
+        companyName: this.companyName,
         email: this.email,
         phoneNumber: this.phoneNumber,
         subject: this.subject,

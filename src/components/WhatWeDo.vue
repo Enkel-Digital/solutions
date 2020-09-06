@@ -157,7 +157,11 @@
             </div>
             <div class="tile is-child box">
               <p class="title">
-                <i class="fas fa-globe-africa" /> Business Analysts<br />
+                <i class="fas fa-globe-africa" /> Business Strategy<br />
+                <i class="fas fa-lock" /> Business Strategy<br />
+                <i class="fas fa-unlock-alt" /> Business Strategy<br />
+                <i class="fas fa-exchange-alt" /> Business Strategy<br />
+                <i class="fas fa-key" /> Business Strategy<br />
               </p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
