@@ -4,7 +4,8 @@
     <br />
 
     <!-- Section heading -->
-    <div class="column is-left is-one-quarter">
+    <!-- Wrapped in a column div class to put it in a single block on the left matching the profile pic columns -->
+    <div class="column is-one-quarter">
       <h1 class="title mb-6" style="color: #e81050">
         Our Dedicated
         <br />
@@ -17,6 +18,7 @@
     </div>
 
     <div class="columns is-multiline">
+      <!-- At most 4 per row, as 12/3==4 -->
       <div v-for="(teamMember, i) in teamMembers" :key="i" class="column is-3">
         <div class="card">
           <div class="card-image">
@@ -110,20 +112,15 @@ export default {
           imageSrc: "Deon",
         },
         {
-          name: "Yumi",
-          title: "Art Director",
-          imageSrc: "y1",
-        },
-        {
-          name: "Yue Min",
-          title: "Creative Director",
-          imageSrc: "y4",
-        },
-        {
           name: "Jania",
           title: "Marketing Director",
           imageSrc: "jania",
         },
+        // {
+        //   name: "Trisha",
+        //   title: "Art Director",
+        //   imageSrc: "trisha",
+        // },
         {
           name: "Cheran",
           title: "Staff Engineer",

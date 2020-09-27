@@ -49,7 +49,11 @@
             >
               <i class="fab fa-github" />
             </a>
-            <a href="https://" target="_blank" class="fa-2x mr-3">
+            <a
+              href="https://www.linkedin.com/company/enkel-digital/"
+              target="_blank"
+              class="fa-2x mr-3"
+            >
               <i class="fab fa-linkedin" />
             </a>
             <a
@@ -59,10 +63,11 @@
             >
               <i class="fab fa-telegram" />
             </a>
-            <a href="https://" target="_blank" class="fa-2x mr-3">
-              <i class="fab fa-patreon" />
-            </a>
-            <a href="https://" target="_blank" class="fa-2x mr-3">
+            <a
+              href="https://www.ycombinator.com"
+              target="_blank"
+              class="fa-2x mr-3"
+            >
               <i class="fab fa-y-combinator" />
             </a>
           </div>
