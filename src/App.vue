@@ -60,3 +60,14 @@ export default {
   height: 100%;
 }
 </style>
+
+// Globally shared styles
+<style>
+/* Custom span class to highlight keywords in the cards */
+.highlight {
+  /* Right and Left more padding */
+  padding: 0.1em 0.2em 0.1em 0.2em;
+  border-radius: 0.3em;
+  background-color: rgb(255, 185, 56);
+}
+</style>

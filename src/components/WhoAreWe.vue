@@ -1,22 +1,26 @@
 <template>
-  <section class="section">
+  <section class="container section has-text-left">
     <!-- Extra break spacing so that when navigating with # ids, the navbar's border does not touch the content so closely -->
     <br />
 
-    <div class="columns is-centered">
-      <div class="card column is-one-third has-text-left">
-        <h1 class="title">Who are we</h1>
-        <h2 class="subtitle">
-          We’re a global software consultancy solving complex problems with
-          technology. We connect strategy and execution, helping our clients to
-          strengthen their core technology, scale with flexibility and create
-          seamless digital experiences. Using our extensive experience in
-          developing software, we partner with our clients to continuously
-          evolve their tech while enabling an adaptive mindset to meet their
-          business goals.
-        </h2>
-      </div>
-    </div>
+    <!-- Section heading -->
+    <h1 class="title" style="color: #e81050">Who are we</h1>
+
+    <p class="subtitle">
+      Global consultancy solving complex problems with technology, helping our
+      clients
+      <span class="highlight"
+        >create seamlessly intuitive digital experiences</span
+      >
+      with our extensive experiences. We partner with our clients to
+      continuously evolve their tech while enabling an adaptive mindset to meet
+      their business goals.
+      <br />
+      <br />
+      We specialize in building
+      <span class="highlight">Beautiful Bespoke software</span> with your
+      requirements and while exceeding your expectations.
+    </p>
   </section>
 </template>
 

@@ -42,6 +42,7 @@
               v-html="menuItem.name"
               :href="menuItem.link"
               :target="menuItem.target"
+              @click="showMobileMenu = false"
             />
           </div>
         </div>
